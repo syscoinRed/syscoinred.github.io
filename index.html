@@ -42,12 +42,15 @@
     </style>
 </head>
 <body>
-    <video autoplay loop muted class="background">
+    <video id="backgroundVideo" autoplay loop muted class="background">
         <source src="SyscoinR_bg.webm" type="video/webm">
     </video>
     <img src="syscoinWhiteLogo4x.png" alt="Logo" class="logo">
     <div class="footer">
         &copy; 2024 Syscoin Red
     </div>
+    <script>
+        document.getElementById('backgroundVideo').playbackRate = 0.75; // Change the speed here (0.5 means half speed, 2 means double speed, etc.)
+    </script>
 </body>
 </html>
